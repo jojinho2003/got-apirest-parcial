@@ -9,8 +9,8 @@ En las Routes deje indicaciones en comentarios de que hace cada cosa ya que la A
 
 **Autor:** Alejo Herrera  
 **Materia:** Aplicaciones Híbridas  
-**Profesor:** [Nombre del docente]  
-**Comisión:** [Número de comisión]
+**Profesor:** Jonathan Emanuel Cruz
+**Comisión:** DWN4AV
 
 ---
 
