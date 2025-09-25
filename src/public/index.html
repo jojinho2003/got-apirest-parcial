@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>API - Game of Thrones (Parcial)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 0; padding: 0; background:#f4f6f8; color:#111; }
+    header { background:#0b3d91; color:white; padding: 24px; }
+    main { padding: 20px; max-width: 900px; margin: 0 auto; }
+    .card { background: white; padding: 16px; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); margin-bottom: 12px; }
+    footer { margin-top: 24px; padding: 12px 20px; background:#111; color:#eee; text-align:center; font-size:0.9rem; }
+    a.endpoint { color:#0b3d91; text-decoration:none; font-weight:600; }
+    .endpoints { display:flex; gap:8px; flex-wrap:wrap; }
+    code { background:#eef; padding:2px 6px; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>API RESTful — Game of Thrones</h1>
+    <p>Proyecto: Parcial 1 - Aplicaciones Híbridas</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Descripción</h2>
+      <p>Esta API expone información de <strong>Characters</strong> (personajes) y <strong>Houses</strong> (casas) del universo <em>Game of Thrones</em>. Implementada en Node.js / Express y MongoDB (Mongoose).</p>
+    </div>
+
+    <div class="card">
+      <h2>Endpoints principales</h2>
+      <div class="endpoints">
+        <div>
+          <strong>Characters</strong>
+          <ul>
+            <li><a class="endpoint" href="/api/characters">GET /api/characters</a> — Ver todos los personajes</li>
+            <li><code>GET /api/characters/:id</code> — Obtener personaje por ID</li>
+            <li><code>POST /api/characters</code> — Crear personaje (body JSON)</li>
+            <li><code>PUT /api/characters/:id</code> — Actualizar personaje</li>
+            <li><code>DELETE /api/characters/:id</code> — Eliminar personaje</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Houses</strong>
+          <ul>
+            <li><a class="endpoint" href="/api/houses">GET /api/houses</a> — Ver todas las casas</li>
+            <li><code>GET /api/houses/:id</code> — Obtener casa por ID (incluye miembros)</li>
+            <li><code>POST /api/houses</code> — Crear casa</li>
+            <li><code>PUT /api/houses/:id</code> — Actualizar casa</li>
+            <li><code>DELETE /api/houses/:id</code> — Eliminar casa (desvincula personajes)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Validaciones (breve)</h2>
+      <p>Al crear/actualizar personajes se valida que <code>name</code> exista, que <code>age</code> sea entero >= 0 y que <code>alive</code> sea booleano. Para casas se valida <code>name</code> requerido y único.</p>
+    </div>
+
+    <div class="card">
+      <h2>Cómo usar (resumen)</h2>
+      <ol>
+        <li>Levantar MongoDB local o Atlas.</li>
+        <li>Configurar `.env` con `MONGO_URI` y `PORT`.</li>
+        <li>Instalar dependencias `npm install` y correr `npm run dev`.</li>
+        <li>Opcional: correr `npm run seed` para poblar algunos datos de ejemplo.</li>
+      </ol>
+    </div>
+
+  </main>
+
+  <footer>
+    Alejo Herrera · Aplicaciones Híbridas · Profesor: Jonathan Emanuel Cruz · Comisión: DWN4AV
+  </footer>
+</body>
+</html>
