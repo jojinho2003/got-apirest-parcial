@@ -25,41 +25,6 @@ Exponen endpoints para manejar:
 - `houses` (casas)  
 
 ---
-
-## Estructura del proyecto
-
-got-api-parcial/
-├─ .env.example
-├─ package.json
-├─ README.md
-├─ server.js
-├─ src/
-│ ├─ config/
-│ │ └─ db.js
-│ ├─ models/
-│ │ ├─ Character.js
-│ │ ├─ House.js
-│ │ └─ User.js
-│ ├─ controllers/
-│ │ ├─ characterController.js
-│ │ ├─ houseController.js
-│ │ └─ userController.js
-│ ├─ routes/
-│ │ ├─ characterRoutes.js
-│ │ ├─ houseRoutes.js
-│ │ └─ userRoutes.js
-│ ├─ middlewares/
-│ │ └─ validators.js
-│ └─ public/
-│ └─ index.html
-└─ seeds/
-└─ seed.js
-
-yaml
-Copiar código
-
----
-
 ## Requisitos
 
 - Node.js v16+
@@ -78,7 +43,8 @@ cd got-apirest-parcial
 Copiar el archivo de variables de entorno:
 
 bash
-Copiar código
+2. 
+Copiar el archivo de variables de entorno:
 cp .env.example .env
 Editar .env si usás MongoDB Atlas o querés cambiar el puerto:
 
@@ -89,12 +55,13 @@ MONGO_URI=mongodb://localhost:27017/got_parcial
 Instalar dependencias:
 
 bash
-Copiar código
+3.
+Instalar dependencias:
 npm install
-Poblar datos de ejemplo (opcional):
 
+4. 
+Poblar datos de ejemplo (opcional):
 bash
-Copiar código
 npm run seed
 Esto crea:
 
@@ -102,15 +69,15 @@ Casas: House Stark, House Lannister
 
 Personajes: Arya Stark, Eddard Stark, Tyrion Lannister
 
+5.
 Levantar el servidor:
-
 bash
-Copiar código
 npm run dev   # con nodemon
 # o
 npm start     # Node normal
-Abrir en el navegador:
 
+6.
+Abrir en el navegador:
 arduino
 Copiar código
 http://localhost:3000/
