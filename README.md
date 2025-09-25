@@ -5,12 +5,6 @@
 **Profesor:** Jonathan Emanuel Cruz 
 **Comisión:** DWN4AV
 En las Routes deje indicaciones en comentarios de que hace cada cosa ya que la API esta hecha en su mayoria en ingles para que me sirva para mi portfolio
-# GOT API - Parcial 1 (Aplicaciones Híbridas)
-
-**Autor:** Alejo Herrera  
-**Materia:** Aplicaciones Híbridas  
-**Profesor:** Jonathan Emanuel Cruz
-**Comisión:** DWN4AV
 
 ---
 
